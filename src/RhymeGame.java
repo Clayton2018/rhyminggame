@@ -6,7 +6,19 @@ public class RhymeGame {
 
         Scanner in = new Scanner(System.in);
         String animal;
+
+        animal = getAnimal(in);
+
+        if (rhymingAnimal(animal)){
+            System.out.println("this animal rhymes with cat!");
+        }
+        else{
+            System.out.println("This animal doesn't rhyme!");
+        }
+
         in.close();
+
+
 
     }//end main
 
